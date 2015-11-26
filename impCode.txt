@@ -1,0 +1,12 @@
+
+
+
+var distance = $('#main').offset().bottom;
+$(window).scroll(function() {
+    if ($('#main').visible(true)== false){
+
+    console.log("first is not visible");
+} else {
+    console.log("first is visible");
+}
+});

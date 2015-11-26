@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chakri Reddy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <style>
+    /*-------------------------Ids and Important----------------------*/
+    .dimensions {
+        width: 100%;
+        height: 100vh;
+        /*margin-bottom: 10px;*/
+    }
+    #main{
+        /*margin-top: -10px;*/
+        background-color: #cf4646;
+        position: static;
+        z-index: -910;
+    }
+    #second {
+        position: fixed;
+        z-index: -990;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+    }
+    #third{
+        position: static;
+        margin-top: 100vh;
+        z-index: -910;
+        background-color: orange;
+    }
+
+    #fourth {
+        margin-top: -20px;
+        position: relative;
+        z-index: -990;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: teal;
+    }
+        #fifth {
+        position: fixed;
+        z-index: -900;
+        top: 50vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: purple;
+    }
+
+    #navigationBar {
+        padding-top: 25px;
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 3s;
+    }
+    #descri {
+    /*background-color: #b62f2f;*/
+    display: none;
+    }
+    #social{
+        display: none;
+    }
+    #social button a{
+        color:white;
+        text-decoration: none;
+        text-transform: none;
+    }
+
+    #dream,
+    #design,
+    #develop {
+        display: none;
+    }
+
+/*-------------------------classes--------------------------------------*/
+
+    .navBarLinkProperties a {
+        font-size: 1.25em;
+        color: white;
+        text-decoration: none;
+    }
+    .navBarProperties {
+        margin-top: 10px;
+        font-size: 1.3em;
+        color: #df8686;
+        text-decoration: none;
+    }
+    .descriptionProperties{
+        font-size:6vh;
+        font-weight:bold;
+        color:white;
+    }
+    .centeralign {
+        text-align: center;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+
+
+
+    
+    .paddingLogo {
+        padding-top: 30vh;
+        padding-bottom: 70vh;
+    }
+    
+
+    /*---------------Animations-----------------------*/
+    
+    @-webkit-keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    /*---------------Animations End-----------------------*/
+    
+/*    #logo {
+        -webkit-animation-name: fadeIn;
+        -webkit-animation-duration: 2s;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+    }*/
+    
+
+    
+
+    div img{
+        width: 48%;
+        height: auto;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="dimensions" id="main">
+        <div id="navigationBar" class="centeralign navBarLinkProperties">
+            <nav><a href="#main">Blog </a><span class="navBarProperties">  |   </span><a href="#second"> Portifolio </a><span class="navBarProperties">   |   </span><a href="#third"> About </a></nav>
+        </div>
+        
+
+
+
+
+        <div id="logo_main" class="centeralign paddingLogo">
+            <div id="logo" width="48%">
+                <img src="logo5.svg" alt="CHAKRI REDDY"/>
+            </div>
+            <div id="descri" class="descriptionProperties">
+                <div><span id="dream">Dream </span><span id="design">Design </span><span id="develop">Developer</span></div></div>
+            
+
+
+            <div id="social">
+                <button type="button" class="btn btn-primary btn-lg"><a href="#fourth">Facebook</a></button>
+                <button type="button" class="btn btn-success btn-lg"><a href="#fifth">twitter</a></button>
+            </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!--  ....................... Second Class........................... -->
+
+    <div id="second" class="dimensions">
+        <h2> Welcome to INDIA</h2>
+        <button>Click animate</button>
+    </div>
+
+
+    <!--  ....................... Third Class........................... -->
+    <div id="third"class="dimensions">
+        <h1>Hello, world!</h1>
+        <h3>second</h3>
+    </div>
+ <!--  ....................... Fourth Class........................... -->
+    <div id="fourth"class="dimensions">
+        <h1>Heyaa, Fourth!</h1>
+    </div>
+ <!--  ....................... Fifth Class........................... -->
+    <div id="fifth"class="dimensions">
+        <h1>Heyaa, Fifth!</h1>
+    </div>
+    <!--  ....................... Jquery Funtionality........................... -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/jquery.visible.min.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+        $("#dream").fadeIn(1400);
+        $("#design").fadeIn(2200);
+        $("#develop").fadeIn(2800);
+        $("#descri").fadeIn(1000);
+        $("#social").fadeIn(1000);
+
+
+         $("#logo").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#third").offset().top
+                }, 3000);
+            });
+
+
+         var n = $("#main div").length;
+         var g = $("#second").length;
+         var f = $("#third").length;
+         console.log("n="+n);
+         console.log("second="+g);
+         console.log("tird"+f);
+
+
+
+/*$(window).scroll(function() {
+    if ($('#main').visible()==false && $('#third').visible(true)==false){
+
+    console.log("second is Complete Visible");
+   
+    
+
+} else{
+    console.log("second is no Visible");
+
+});*/
+$(window).scroll(function() {
+    if ($('#second').visible(true) && $('#third').visible(true) && $("#fourth").visible(true)==false){
+
+        $("#fifth").css("display","none");
+
+        } 
+    });
+
+$(window).scroll(function() {
+    if ($('#main').visible(true) == true && $('#third').visible(true)==false){
+
+        //$("#fourth").css("margin-top","100vh");
+        console.log("showing");
+        $("#fifth").css("display","none");
+
+        } else {
+
+        //$("#fourth").css("margin-top","100vh");
+        console.log("not showing");
+        if($('#third').visible(true) && $('#fourth').visible(true)){
+        /*$("#fifth").fadeIn();*/
+        $("#fifth").show();
+         }
+
+        }
+    });
+
+
+
+
+/*$(window).scroll(function() {
+    if ($('#main').visible(tue) == true && $('#third').visible(true)==false){
+        $("#second").show();
+        $("#fifth").hide(1000);
+
+        if( $("#third").visible(true) && $("#fourth").visible(true)){
+            $("#fifth").show();
+            $("#fourth").css("margin-top","100vh");
+        }
+        // $("#second").hide(1000);
+        // $("#second").css("display","none");
+        // $("#fourth").css("margin-top","100vh");
+    console.log("second is Complete Visible");
+
+
+
+} else {
+
+        if($("#third").visible() && $("#main").visible(true)==false){
+            $("#second").hide();
+        }else{
+            $("#second").show()
+        }
+        $("#fourth").css("margin-top","100vh");
+        $("#fifth").show(1000);
+        // if($("#third").visible() && $("#fourth").visible(true)==false){
+        //     $("#fifth").show();
+        //     $("#fourth").css("margin-top","100vh");
+        // }
+    console.log("Second is no visible");
+}
+});*/
+
+
+
+
+
+
+
+
+
+
+
+// $(window).scroll(function() {
+//     if ($('#third').visible(true)==false && $('#fourth').visible()==false){
+
+//         $("#fifth").show(1000);
+//         $("#fifth").css("position","fixed");
+
+//     console.log("second is Complete Visible");
+// } else {
+
+//     console.log("Second is partial or no visible");
+//     $("#second").hide(1000);
+//     $("#fifth").css("position","static");
+// }
+// });
+
+
+/*$(window).scroll(function() {
+    if ($('#main').visible(true)==false && $('#third').visible(true)==false && $("#second").visible(true)){
+
+    console.log("not visible");
+    $("#fifth").css("position","fixed");
+    $("#fourth").css("margin-top","100vh");
+   
+    
+
+} else{
+    console.log("else");
+    $("#fifth").css("position","static");
+    $("#fourth").css("margin-top","100vh");
+}
+});*/
+
+/*$(window).scroll(function() {
+    if ($('#main').visible()==false && $('#third').visible(true)==false){
+
+    console.log("second is Complete Visible");
+    $("#fourth").css("position","static");
+    $("#third").css("position","static");
+    $("#fourth").css("margin-top","0vh");
+    
+
+} else if($('#third').visible() && $('#main').visible(true)==false && $("#second").visible(true)==false){
+
+        console.log("Second not visible and fourth should be visible");
+        $("#third").css("position","fixed");
+        $("#fourth").css("margin-top","100vh");
+    }else {
+
+console.log("now came to final else dont know");
+    $("#third").css("position","fixed");
+    $("#second").css("position","static");
+
+}
+});*/
+
+
+
+
+
+/*if ($('#main').visible(true)) {
+    // The element is visible, do something
+    console.log("main visible working");
+} else {
+    // The element is NOT visible, do something else
+    console.log("main not visible working");
+}*/
+
+/*//Below code is useful but not using now
+       // $('#second:in-viewport').hide("#main").hide("#third");
+
+        var element_position = $("#third").offset().top;
+        var scroll_position = $(window).scrollTop();
+        var viewport_height = $(window).height();
+        if((scroll_position + viewport_height) > element_position){
+            console.log("is working");
+            $("#second").css("position","fixed");
+        }else{
+            console.log("else is working");
+            $("#second").css("position","relative");
+            $("#third").Fade();
+
+        }
+//above code is useful but not using*/
+
+    });
+    </script>
+    <!--  ....................... Jquery Funtionality End........................... -->
+</body>
+
+</html>
