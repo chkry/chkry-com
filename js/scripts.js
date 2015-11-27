@@ -15,8 +15,15 @@
        $("#descri").click(function() {
            $('html, body').animate({
                scrollTop: $("#fourth").offset().top
+           }, 6000);
+       });
+
+              $("#social").click(function() {
+           $('html, body').animate({
+               scrollTop: $("#fourth").offset().top
            }, 3000);
        });
+
 
 
 
@@ -58,7 +65,7 @@
        });
 
 
-       $(window).scroll(function() {
+/*       $(window).scroll(function() {
            if ($('#fourth').visible(true) && $('#fifth').visible(true) && $("#third").visible(true) == false) {
 
                $("#sixth").show().slideDown(4000);
@@ -70,7 +77,7 @@
                $("#sixth").hide().css("display", "none");
                 console.log("else is going on");
            }
-       });
+       });*/
 
 
 
