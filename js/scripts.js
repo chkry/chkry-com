@@ -65,6 +65,25 @@
        });
 
 
+
+       /* Sixth division visibility scrolling */
+
+      $(window).scroll(function() {
+           if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
+               console.log("chakri showing");
+               $("#sixth").css("display", "none");
+           } else {
+               console.log("chakri not showing");
+               if ($('#third').visible()==false && $('#fourth').visible(true) && $('#fifth').visible(true)) {
+                   $("#sixth").show();
+                   if($('#third').visible(true)){
+                     $("#sixth").css("display", "none");
+                   }
+               }
+
+           }
+       });
+
 /*       $(window).scroll(function() {
            if ($('#fourth').visible(true) && $('#fifth').visible(true) && $("#third").visible(true) == false) {
 

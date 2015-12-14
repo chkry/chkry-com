@@ -51,16 +51,23 @@
       background-color: purple;
   }
     #sixth {
-      position: static;
+/*      position: static;
       z-index: -900;
       margin-top:-20px;
       height:200px;
       top: 0;
       left: 0;
       bottom: 0;
+      right: 0;*/
+      position: fixed;
+      z-index: -890;
+      top: 80vh;
+      left: 0;
+      bottom: 0;
       right: 0;
-
       background-color: green;
+
+
   }
   
   #navigationBar {
