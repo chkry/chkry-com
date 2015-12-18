@@ -131,7 +131,16 @@
       color: #df8686;
       text-decoration: none;
   }
-  
+
+    #navigationBar button{
+    background-color: transparent;
+   /* border: 1px solid transparent;*/
+  }
+  #navigationBar button:hover{
+    color: #2E2E2E;
+    /*border: 1px dotted white;*/
+    box-shadow: 0 0 6px white;
+  }
   .descriptionProperties {
       font-size: 3.2vw;
       white-space: nowrap;
