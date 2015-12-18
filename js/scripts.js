@@ -17,15 +17,12 @@
                scrollTop: $("#fourth").offset().top
            }, 6000);
        });
-
+       
               $("#social").click(function() {
            $('html, body').animate({
                scrollTop: $("#fourth").offset().top
            }, 3000);
        });
-
-
-
 
 //Srolling to division functions.........................................
        var n = $("#main div").length;
@@ -41,7 +38,6 @@
            if ($('#second').visible(true) && $('#third').visible(true) && $("#fourth").visible(true) == false) {
 
                $("#fifth").css("display", "none");
-
            }
        });
 
@@ -60,14 +56,12 @@
                    /*$("#fifth").fadeIn();*/
                    $("#fifth").show();
                }
-
            }
        });
 
 
 
        /* Sixth division visibility scrolling */
-
       $(window).scroll(function() {
            if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
                console.log("chakri showing");
@@ -80,7 +74,6 @@
                      $("#sixth").css("display", "none");
                    }
                }
-
            }
        });
 
