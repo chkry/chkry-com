@@ -10,32 +10,20 @@
 #main
 {
     position: static;
-    z-index: -910;
+    z-index: 1;
     /*margin-top: -10px;*/
-
     background-color: #cf4646;
+    /*background-color: #3B0B0B;*/
 }
 
-#second
-{
-    position: fixed;
-    z-index: -990;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    font-family: 'Montserrat', sans-serif;
-    border-top:10px solid #FE642E;;
-    /*//orange:*/
-}
 
 #third
 {
     display:inline-block;
     position: static;
-    z-index: -910;
+    z-index: 1;
     width: 100%;
-    height: 97vh;
+    height: 101vh;
     margin-top: 96vh;
     border-spacing: 0px;
     background-color: #0B614B;
@@ -52,7 +40,8 @@
     bottom: 0;
     left: 0;
     margin-top: -19px;
-    background-color: teal;
+    background-color: #8A2908;
+    /*background-color: #d8d8d8; */
 }
 
 #fifth
@@ -63,29 +52,11 @@
     right: 0;
     bottom: 0;
     left: 0;
-
-    background-color: purple;
+    
+    background-color: #6E6E6E;
 }
 
-#sixth
-{
-    /*      position: static;
-      z-index: -900;
-      margin-top:-20px;
-      height:200px;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;*/
-    position: fixed;
-    z-index: -890;
-    top: 85vh;
-    right: 0;
-    bottom: 0;
-    left: 0;
 
-    background-color: green;
-}
 /*-------------------------classes--------------------------------------*/
 
 .navBarLinkProperties a
@@ -122,6 +93,19 @@ div img
     width: 48%;
     height: auto;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*--------------First DIV STYLE SHEET-------------------*/
 
 #navigationBar
@@ -255,6 +239,21 @@ div img
 
 /*--------------SECOND DIV STYLE SHEET-------------------*/
 
+#second
+{
+    position: fixed;
+    z-index: -990;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: 'Montserrat', sans-serif;
+    border-top:10px solid #FE642E;;
+    background-color: #d8d8d8; 
+    /*//orange:*/
+}
+
+
 .tablesecondMain
 {
     top: 0;
@@ -288,9 +287,10 @@ div img
 .toplayerText{
     width: 95%;
     padding-top: 15px;
+    /*font-size: 18px;*/
     font-size: 2.5vh;
     padding-left: 20px;
-    /*line-height: 1.5em;*/
+    color:#424242;
     text-align: left;
 }
 .whitecolor{
@@ -300,9 +300,44 @@ div img
     color:black;
 }
 .graycolor{
-    color:#424242;
+    
 }
 #second h2 {font-family: 'Pacifico', cursive;color:black;}
 
 /*.tablesecondMain1{border-top:10px solid #0B614B;}*/
 /*--------------SECOND DIV STYLE SHEET END-------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------SIXTH DIV STYLE SHEET START-------------------*/
+#sixth
+{
+    position: fixed;
+    z-index: -890;
+    top: 90vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #151515;
+}
+#sixth a{
+    color:white;
+}
+.copyrightText{
+    text-align: right;
+    font-size: 1em;
+    color: #D8D8D8;
+    padding: 2%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+/*--------------SIXTH DIV STYLE SHEET END-------------------*/
