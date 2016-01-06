@@ -1,60 +1,74 @@
   /*-------------------------Ids and Important----------------------*/
-  
-  .dimensions {
-      width: 100%;
-      height: 100vh;
-      /*margin-bottom: 10px;*/
-  }
-  
-  #main {
-      /*margin-top: -10px;*/
-      background-color: #cf4646;
-      position: static;
-      z-index: -910;
-  }
-  
-  #second {
-      position: fixed;
-      z-index: -990;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: white;
-  }
-  
-  #third {
-      position: static;
-      margin-top: 100vh;
-      height: 100vh;
-      width: 100%;
-      z-index: -910;
-      background-color: orange;
-  }
-  
-  #fourth {
-      margin-top: -20px;
-      position: relative;
-      z-index: -990;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: teal;
-  }
-  
-  #fifth {
-      position: fixed;
-      z-index: -900;
-      top: 48vh;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: purple;
-  }
-  
-  #sixth {
-      /*      position: static;
+
+.dimensions
+{
+    width: 100%;
+    height: 100vh;
+    /*margin-bottom: 10px;*/
+}
+
+#main
+{
+    position: static;
+    z-index: -910;
+    /*margin-top: -10px;*/
+
+    background-color: #cf4636;
+}
+
+#second
+{
+    position: fixed;
+    z-index: -990;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: white;
+}
+
+#third
+{
+    position: static;
+    z-index: -910;
+
+    width: 100%;
+    height: 100vh;
+    margin-top: 100vh;
+
+    background-color: orange;
+}
+
+#fourth
+{
+    position: relative;
+    z-index: -990;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    margin-top: -20px;
+
+    background-color: teal;
+}
+
+#fifth
+{
+    position: fixed;
+    z-index: -900;
+    top: 48vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: purple;
+}
+
+#sixth
+{
+    /*      position: static;
       z-index: -900;
       margin-top:-20px;
       height:200px;
@@ -62,148 +76,192 @@
       left: 0;
       bottom: 0;
       right: 0;*/
-      position: fixed;
-      z-index: -890;
-      top: 85vh;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      background-color: green;
-  }
-  /*-------------------------classes--------------------------------------*/
-  
-  .navBarLinkProperties a {
-      font-size: 1.25em;
-      color: white;
-      text-decoration: none;
-  }
-  /*---------------Animations-----------------------*/
-  
-  @-webkit-keyframes fadeIn {
-      from {
-          opacity: 0;
-      }
-      to {
-          opacity: 1;
-      }
-  }
-  /*---------------Animations End-----------------------*/
-  /*    #logo {
+    position: fixed;
+    z-index: -890;
+    top: 85vh;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: green;
+}
+/*-------------------------classes--------------------------------------*/
+
+.navBarLinkProperties a
+{
+    font-size: 1.25em;
+
+    text-decoration: none;
+
+    color: white;
+}
+/*---------------Animations-----------------------*/
+
+@-webkit-keyframes fadeIn
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
+}
+/*---------------Animations End-----------------------*/
+/*    #logo {
         -webkit-animation-name: fadeIn;
         -webkit-animation-duration: 2s;
         animation-name: fadeIn;
         animation-duration: 2s;
     }*/
-  
-  div img {
-      width: 48%;
-      height: auto;
-  }
-  /*--------------First DIV STYLE SHEET-------------------*/
-  
-  #navigationBar {
-      padding-top: 25px;
-      -webkit-animation-name: fadeIn;
-      -webkit-animation-duration: 3s;
-  }
-  
-  #descri {
-      /*background-color: #b62f2f;*/
-      display: none;
-  }
-  
-  #social {
-      padding-top: 10px;
-      display: none;
-  }
-  
 
-  
-  #dream,
-  #design,
-  #develop {
-      display: none;
-  }
-  
-  .navBarProperties {
-      margin-top: 10px;
-      font-size: 1.3em;
-      color: #df8686;
-      text-decoration: none;
-  }
+div img
+{
+    width: 48%;
+    height: auto;
+}
+/*--------------First DIV STYLE SHEET-------------------*/
 
-    #navigationBar button{
+#navigationBar
+{
+    padding-top: 25px;
+
+    -webkit-animation-name: fadeIn;
+    -webkit-animation-duration: 3s;
+}
+
+#descri
+{
+    /*background-color: #b62f2f;*/
+    display: none;
+}
+
+#social
+{
+    display: none;
+
+    padding-top: 10px;
+}
+
+
+
+#dream,
+#design,
+#develop
+{
+    display: none;
+}
+
+.navBarProperties
+{
+    font-size: 1.3em;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    color: #df8686;
+}
+
+#navigationBar button
+{
     background-color: transparent;
-   /* border: 1px solid transparent;*/
-  }
-  #navigationBar button:hover{
-    color: #2E2E2E;
+    /* border: 1px solid transparent;*/
+}
+#navigationBar a:hover
+{
+    /*color: #2E2E2E;*/
     /*border: 1px dotted white;*/
-    box-shadow: 0 0 6px white;
-  }
-  .descriptionProperties {
-      font-size: 3.2vw;
-      white-space: nowrap;
-      font-weight: bold;
-      color: white;
-  }
-  
-  .centeralign {
-      text-align: center;
-      margin-right: auto;
-      margin-left: auto;
-      display: block;
-  }
-  
-  .paddingLogo {
-      padding-top: 30vh;
-      padding-bottom: 70vh;
-  }
-  
-  .hover {
-      background-color: white;
-      border: 1px solid #F3F781;
-  }
+    text-shadow: 4px 1px 6px black;
+}
+.descriptionProperties
+{
+    font-size: 3.2vw;
+    font-weight: bold;
 
-    #social button a {
-      color: #2E2E2E;
-      text-decoration: none;
-      text-transform: uppercase;
-      margin:auto;
-      display: block;
-  }
-  #social button:hover {
-      box-shadow: 0px 0px 5px blue,2px 0px 5px green,0px 2px 5px red;
-      border: 1px solid white;
-  }
-  #social .btn{
-/*    width: 12vw;*/
+    white-space: nowrap;
+
+    color: white;
+}
+
+.centeralign
+{
+    display: block;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    text-align: center;
+}
+
+.paddingLogo
+{
+    padding-top: 30vh;
+    padding-bottom: 70vh;
+}
+
+.hover
+{
+    border: 1px solid #f3f781;
+    background-color: white;
+}
+
+#social button a
+{
+    display: block;
+
+    margin: auto;
+
+    text-decoration: none;
+    text-transform: uppercase;
+
+    color: #2e2e2e;
+}
+#social button:hover
+{
+    border: 1px solid white;
+    box-shadow: 0 0 5px blue,2px 0 5px green,0 2px 5px red;
+}
+#social .btn
+{
+    /*    width: 12vw;*/
     font-size: 1.2vw;
-  }
-  /*--------------First DIV STYLE SHEET END-------------------*/
-  /*--------------SECOND DIV STYLE SHEET-------------------*/
-  
-  .tablesecondMain {
-      background-color: white;
-      width: 100%;
-      height: 50vh;
-      top: 0;
-      left: 0;
-  }
-  
-  .tablesecondMain1 {
-      background-color: white;
-      width: 100%;
-      height: 50vh;
-      bottom: 0;
-      left: 0;
-  }
-  
-  .tablesecond {
-      width: 50%;
-      height: 100%;
-      border: 0em solid green;
-      display: block;
-      float: left;
-  }
-  /*--------------SECOND DIV STYLE SHEET END-------------------*/
+}
+/*--------------First DIV STYLE SHEET END-------------------*/
+/*--------------SECOND DIV STYLE SHEET-------------------*/
+
+.tablesecondMain
+{
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50vh;
+    /*#0B4C5F*/
+
+    background-color: #0b614b;
+}
+
+.tablesecondMain1
+{
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50vh;
+
+    background-color: #d8d8d8;
+}
+
+.tablesecond
+{
+    display: block;
+    float: left;
+
+    width: 50%;
+    height: 100%;
+
+    border: 0 solid green;
+}
+/*--------------SECOND DIV STYLE SHEET END-------------------*/

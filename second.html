@@ -8,22 +8,24 @@
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
 <style>
+.tablesecondMain {
+    /*#0B4C5F*/
+    background-color: #0B614B;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    left: 0;
+}
 
-.tablesecondMain{
-    background-color: white;
+.tablesecondMain1 {
+    background-color: #D8D8D8;
     width: 100%;
     height: 50vh;
-    top:0;
+    bottom: 0;
     left: 0;
 }
-.tablesecondMain1{
-    background-color: white;
-    width: 100%;
-    height: 50vh;
-    bottom:0;
-    left: 0;
-}
-.tablesecond{
+
+.tablesecond {
     width: 50%;
     height: 100%;
     border: 0em solid green;
@@ -31,27 +33,85 @@
     float: left;
 }
 
+.iknowthingslines{
+    font-size:1.2vw;
+    color:black;
+    line-height:50px;
+    float: left;
+    /*display: inline-block;*/
+}
+.iknowthingsnames{
+    /*margin-top: 36px;*/
+    font-size: 1.2vw;
+    line-height:50px;
+    float: left;
+}
+
 </style>
+
 <body>
-<div class="dimensions" id="second"style="border-top:0.2em solid red;">
+    <div class="dimensions" id="second" style="border-top:5px solid #FE642E;">
+        <div class="tablesecondMain" style="position:relative;">
+            
 
 
 
-<div class="tablesecondMain"style="position:relative;">
-        <div id="iknow" class="tablesecond"><h2>I KNOW</h2></div>
-        <div id="iuse"class="tablesecond"><h2>I USE</h2></div>      
-</div>
+
+            <div id="iknow" class="tablesecond">
+                <h2>I KNOW</h2>
 
 
-<div class="tablesecondMain1"style="position:relative;">
-        <div id="iam"class="tablesecond"><h2>I AM</h2></div>
-        <div id="ido"class="tablesecond"><h2>I DO</h2></div>       
-</div>
+
+<!--                 <div id="iknowthings"style="font-size:18px;">
+                    <div>HTML<span style="">..........</span>
+                    </div>
+                    <div>CSS<span style="font-size:82px;color:white;line-height:5px;">..........</span>
+                    </div>
+                    <div>JavaScript<span style="font-size:82px;color:white;line-height:5px;">.......</span>
+                    </div>
+                    <div>PHP<span style="font-size:82px;color:white;line-height:5px;">......</span>
+                    </div>
+                </div> -->
+
+                    <div style="">
+
+                        <div class="iknowthingsnames">
+                            <div>HTML</div><div>CSS</div><div>JavaScript</div><div>PHP</div>
+                        </div>
+                        <div  class="iknowthingslines">
+                                <div><span style="color:white;">.........</span>.</div><div><span style="color:white">.........</span>.</div><div><span style="color:white;">.......</span>...</div><div><span style="color:white;">.....</span>.....</div>
+                        </div>
+<!--                         <div>
+                            <div class="iknowthingsnames">HTML</div><div   class="iknowthingslines">..........</div><br><div class="iknowthingsnames">CSS</div><div  class="iknowthingslines">..........</div><br><div class="iknowthingsnames">JavaScript</div><div  class="iknowthingslines">.......</div><br><div class="iknowthingsnames">PHP</div><div  class="iknowthingslines">......</div><br>
+                        </div> -->
+                    </div>
 
 
-        
 
+
+
+
+
+             </div>
+
+
+
+
+
+
+
+
+
+            <div id="iuse" class="tablesecond">
+                <h2>I USE</h2></div>
         </div>
+        <div class="tablesecondMain1" style="position:relative;">
+            <div id="iam" class="tablesecond">
+                <h2>I AM</h2></div>
+            <div id="ido" class="tablesecond">
+                <h2>I DO</h2></div>
+        </div>
+    </div>
     <!--  ....................... Jquery Funtionality........................... -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="js/jquery.visible.min.js"></script>
