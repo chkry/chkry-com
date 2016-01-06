@@ -1,0 +1,10 @@
+FontStyles :
+
+I am I do : Lora  Lobster
+
+font-family: 'Pacifico', cursive;
+
+
+
+paragraph in second :
+font-family: 'Montserrat', sans-serif;

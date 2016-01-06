@@ -12,6 +12,17 @@
            }, 3000);
        });
 
+
+
+              $("#blogButton").click(function() {
+           $('html, body').animate({
+               scrollTop: $("#fourth").offset().top
+           }, 3000);
+       });
+
+
+
+
        $("#descri").click(function() {
            $('html, body').animate({
                scrollTop: $("#fourth").offset().top
