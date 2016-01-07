@@ -88,6 +88,21 @@
            }
        });
 
+
+// $(window).scroll(function() {
+//       if($('#fifth').visible(true)){
+//         if('#third').visible()==false){
+//           $("#fifth").css("z-index", "0");
+//           $("#sixth").css("z-index", "1");
+//         }else{
+//           $("#fifth").css("z-index", "-900");
+//           $("#sixth").css("z-index", "0");
+//         }
+//       }
+
+//   });
+
+
 /*       $(window).scroll(function() {
            if ($('#fourth').visible(true) && $('#fifth').visible(true) && $("#third").visible(true) == false) {
 
