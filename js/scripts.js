@@ -39,32 +39,25 @@
        var n = $("#main div").length;
        var g = $("#second").length;
        var f = $("#third").length;
-       console.log("n=" + n);
-       console.log("second=" + g);
-       console.log("tird" + f);
+       // console.log("n=" + n);
+       // console.log("second=" + g);
+       // console.log("tird" + f);
 
 
 
        $(window).scroll(function() {
            if ($('#second').visible(true) && $('#third').visible(true) && $("#fourth").visible(true) == false) {
-
                $("#fifth").css("display", "none");
            }
        });
 
        $(window).scroll(function() {
            if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
-
-               //$("#fourth").css("margin-top","100vh");
-               console.log("showing");
+               // console.log("showing");
                $("#fifth").css("display", "none");
-
            } else {
-
-               //$("#fourth").css("margin-top","100vh");
-               console.log("not showing");
+               // console.log("not showing");
                if ($('#third').visible(true) && $('#fourth').visible(true)) {
-                   /*$("#fifth").fadeIn();*/
                    $("#fifth").show();
                }
            }
@@ -75,10 +68,10 @@
        /* Sixth division visibility scrolling */
       $(window).scroll(function() {
            if ($('#main').visible(true) == true && $('#third').visible(true) == false) {
-               console.log("chakri showing");
+               // console.log("chakri showing");
                $("#sixth").css("display", "none");
            } else {
-               console.log("chakri not showing");
+               // console.log("chakri not showing");
                if ($('#third').visible()==false && $('#fourth').visible(true) && $('#fifth').visible(true)) {
                    $("#sixth").show();
                    if($('#third').visible(true)){
@@ -87,7 +80,6 @@
                }
            }
        });
-
 
 // $(window).scroll(function() {
 //       if($('#fifth').visible(true)){
